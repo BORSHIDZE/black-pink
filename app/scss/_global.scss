@@ -1,0 +1,157 @@
+body {
+  font-size: 32px;
+  line-height: 48px;
+  background-color: #eee;
+  font-family: 'Merriweather', serif;
+  color: $gray;
+}
+
+.container {
+  width: 1689px;
+  margin: 0 auto;
+}
+
+
+
+.burger {
+  display: none;
+}
+
+.logo {
+
+  &__link {
+    height: 105px;
+    display: block;
+  }
+}
+
+.box {
+  padding: 125px 0;
+  width: 775px;
+}
+
+.title {
+  font-size: 64px;
+  line-height: 78px;
+  margin-bottom: 20px;
+}
+
+.text {
+  margin-bottom: 10px;
+}
+
+.button {
+  margin-top: 80px;
+  padding: 45px 165px;
+  background-color: #FF9FB8;
+  color: $gray;
+  border-radius: 25px;
+  box-shadow: rgba(0, 0, 0, 0.25) 10px 0px 30px 25px inset, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;
+  transition: all .3s;
+  border: 2px solid transparent;
+
+  &:hover {
+    background-color: #eee;
+    color: $pink;
+    border: 2px solid $pink;
+    box-shadow: none;
+  }
+
+  &:active {
+    opacity: 0.5;
+  }
+}
+
+.form {
+  width: 1300px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  background-color: #FF9FB8;
+  padding: 45px 120px;
+  box-shadow: rgba(0, 0, 0, .25) 10px 0px 60px 40px inset, rgba(0, 0, 0, .3) 0px 18px 36px -18px inset;
+  border-radius: 50px;
+  position: relative;
+
+  &::before,
+  &::after {
+    position: absolute;
+    content: "";
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+
+  &::before {
+    background-image: url('../images/form/1.png');
+    width: 799px;
+    height: 999px;
+    top: 75px;
+    left: -330px;
+  }
+
+  &::after {
+    background-image: url('../images/form/2.png');
+    width: 718px;
+    height: 897px;
+    right: -230px;
+    top: 210px;
+  }
+
+  &__title {
+    display: block;
+    font-size: 53px;
+    text-transform: uppercase;
+    color: $gray;
+    text-shadow: 0px 0px 3px #eee;
+    margin-bottom: 50px;
+  }
+
+  &__label {
+    font-size: 26px;
+    line-height: 40px;
+    text-align: start;
+  }
+
+  &__input {
+    display: block;
+    width: 100%;
+    box-shadow: rgb(204, 219, 232) 3px 3px 6px 0px inset, rgba(255, 255, 255, 0.5) -3px -3px 6px 1px inset;
+
+    &:not(:last-child) {
+      margin-bottom: 35px;
+    }
+  }
+
+  &__button {
+    margin-top: 140px;
+    display: block;
+    width: 100%;
+    background-color: black;
+    color: #E2E2E2;
+    text-transform: uppercase;
+    border-radius: 45px;
+    font-size: 26px;
+    line-height: 40px;
+    padding: 25px 0;
+    position: relative;
+  }
+
+  transition: all .3s;
+  border: 2px solid transparent;
+
+  &:hover {
+    background-color: #eee;
+    color: black;
+    border: 2px solid black;
+  }
+
+  &:active {
+    opacity: 0.5;
+  }
+}
+
+
+.active {
+  display: none;
+}
