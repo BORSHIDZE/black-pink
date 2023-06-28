@@ -261,6 +261,11 @@
     width: 600px;
   }
 
+  .header {
+    padding-bottom: 50px;
+    padding-bottom: 45px;
+  }
+
   .button {
     width: 100%;
     max-width: 100%;
@@ -319,12 +324,13 @@
     background-repeat: no-repeat;
     background-position: center;
     background-size: contain;
-    transform: translateY(80px);
+    transform: translateY(100px);
     z-index: 100000;
     transition: all .3s;
 
+
     &-active {
-      transform: translateY(0);
+      transform: translateY(-200%);
 
       .burger__button {
         background-color: #eee;
@@ -527,6 +533,7 @@
 
   .menu__item:not(:last-child):hover {
     padding: 14px 0;
+    margin-bottom: 120px;
   }
 
   .menu__item:not(:last-child):hover .menu__sub {
@@ -651,8 +658,8 @@
     padding: 3px 0;
   }
 
-    .banner__close {
-      width: 16px;
-      height: 16px;
-    }
+  .banner__close {
+    width: 16px;
+    height: 16px;
+  }
 }
