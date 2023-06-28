@@ -279,7 +279,7 @@
   
       &face {
         width: 45px;
-        background-image: url('images/footer/1.svg');
+        background-image: url('../images/footer/1.svg');
       }
   
       &tw {
@@ -378,6 +378,7 @@
     margin-right: 165px;
     border-radius: 20px;
     padding: 10px 0;
+    text-align: center;
 
     &::after {
       display: none;

@@ -49,6 +49,9 @@ body {
   box-shadow: rgba(0, 0, 0, 0.25) 10px 0px 30px 25px inset, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;
   transition: all .3s;
   border: 2px solid transparent;
+  display: block;
+  max-width: 443px;
+  text-align: center;
 
   &:hover {
     background-color: #eee;
@@ -135,20 +138,18 @@ body {
     line-height: 40px;
     padding: 25px 0;
     position: relative;
+
+    transition: all .3s;
+    border: 2px solid transparent;
+
+    &:hover {
+      background-color: #eee;
+      color: black;
+      border: 2px solid black;
+    }
   }
 
-  transition: all .3s;
-  border: 2px solid transparent;
 
-  &:hover {
-    background-color: #eee;
-    color: black;
-    border: 2px solid black;
-  }
-
-  &:active {
-    opacity: 0.5;
-  }
 }
 
 
